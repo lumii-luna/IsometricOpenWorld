@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://e43lpiecf8fd"]
+
+[ext_resource type="Texture2D" uid="uid://c5kqedd8s0nm0" path="res://Assets/Inventory/inventory-slot.png" id="1_e1cdp"]
+[ext_resource type="Script" uid="uid://cew24ngf26gop" path="res://2DInventory/inventory_ui_slot.gd" id="1_mmocw"]
+
+[node name="InventoryUISlot" type="Panel" unique_id=1282339982]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 16)
+anchors_preset = -1
+anchor_right = 0.025
+anchor_bottom = 0.044000003
+offset_bottom = 0.1599989
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mmocw")
+
+[node name="SlotSprite" type="Sprite2D" parent="." unique_id=357288784]
+texture = ExtResource("1_e1cdp")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1873046137]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Panel" type="Panel" parent="CenterContainer" unique_id=1917779056]
+layout_mode = 2
+
+[node name="ItemDisplay" type="Sprite2D" parent="CenterContainer/Panel" unique_id=1822489323]
+position = Vector2(-8, -8)
+centered = false
+
+[node name="Label" type="Label" parent="CenterContainer/Panel" unique_id=1799964863]
+custom_minimum_size = Vector2(28, 23)
+layout_mode = 0
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 26.0
+offset_bottom = 24.0
+scale = Vector2(0.3, 0.3)
+text = "999"
+horizontal_alignment = 2

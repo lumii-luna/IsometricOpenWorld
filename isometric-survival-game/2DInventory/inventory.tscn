@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cgpihp3b037ad"]
+
+[ext_resource type="Script" uid="uid://b1bne143v2bpy" path="res://2DInventory/inventoryUI.gd" id="1_6ahrq"]
+[ext_resource type="Resource" uid="uid://brdvvg2bxp3i5" path="res://2DInventory/playerInv.tres" id="2_0j84i"]
+[ext_resource type="Texture2D" uid="uid://81li7xxdlpmf" path="res://Assets/Inventory/inventory-background.png" id="2_61b0l"]
+[ext_resource type="PackedScene" uid="uid://e43lpiecf8fd" path="res://2DInventory/inventory_ui_slot.tscn" id="3_yepc8"]
+
+[node name="InventoryUI" type="Control" unique_id=734264285]
+custom_minimum_size = Vector2(84, 64)
+layout_mode = 3
+anchor_right = 0.13100001
+anchor_bottom = 0.17500001
+offset_right = 0.1599884
+offset_bottom = 0.9999962
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6ahrq")
+inv = ExtResource("2_0j84i")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=296496148]
+layout_mode = 0
+offset_right = 84.0
+offset_bottom = 63.0
+texture = ExtResource("2_61b0l")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect" unique_id=141888327]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -28.0
+offset_right = 38.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="InventoryUISlot1" parent="NinePatchRect/GridContainer" unique_id=1282339982 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot2" parent="NinePatchRect/GridContainer" unique_id=1196239909 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot3" parent="NinePatchRect/GridContainer" unique_id=1749728974 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot4" parent="NinePatchRect/GridContainer" unique_id=345628263 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot5" parent="NinePatchRect/GridContainer" unique_id=659366261 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot6" parent="NinePatchRect/GridContainer" unique_id=770965157 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot7" parent="NinePatchRect/GridContainer" unique_id=1599733275 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot8" parent="NinePatchRect/GridContainer" unique_id=1369704483 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot9" parent="NinePatchRect/GridContainer" unique_id=1502472086 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot10" parent="NinePatchRect/GridContainer" unique_id=744184915 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot11" parent="NinePatchRect/GridContainer" unique_id=687342764 instance=ExtResource("3_yepc8")]
+layout_mode = 2
+
+[node name="InventoryUISlot12" parent="NinePatchRect/GridContainer" unique_id=422824432 instance=ExtResource("3_yepc8")]
+layout_mode = 2

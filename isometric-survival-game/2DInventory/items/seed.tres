@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://dr4818e731aa6"]
+
+[ext_resource type="Script" uid="uid://ccql5y1yce8g" path="res://2DInventory/inventory_item.gd" id="1_0oa60"]
+[ext_resource type="Texture2D" uid="uid://ejdw08mtfufo" path="res://Assets/Item/Seed.png" id="2_j1ndt"]
+
+[resource]
+script = ExtResource("1_0oa60")
+name = "Seed"
+description = "This can be planted on tilled land, and requires water and light to grow"
+texture = ExtResource("2_j1ndt")
+metadata/_custom_type_script = "uid://ccql5y1yce8g"

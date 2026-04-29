@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://t6an8e5yltqy"]
+
+[ext_resource type="Script" uid="uid://bvegm6d1ska4m" path="res://2DInventory/items/seed_item.gd" id="1_3lbur"]
+[ext_resource type="Resource" uid="uid://dr4818e731aa6" path="res://2DInventory/items/seed.tres" id="2_rf6m2"]
+[ext_resource type="Texture2D" uid="uid://ejdw08mtfufo" path="res://Assets/Item/Seed.png" id="3_yxenc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxenc"]
+size = Vector2(15, 12)
+
+[node name="SeedItem" type="Area2D" unique_id=1116793133]
+script = ExtResource("1_3lbur")
+item = ExtResource("2_rf6m2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1390668609]
+texture = ExtResource("3_yxenc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1032642080]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_yxenc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

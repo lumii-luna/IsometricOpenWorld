@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c3ha25yb7mb4k"]
+
+[ext_resource type="SpriteFrames" uid="uid://b5ckd7u01elrj" path="res://Scenes/Front.tres" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://cckch56ljay32" path="res://Scenes/player.gd" id="1_vgqql"]
+[ext_resource type="SpriteFrames" uid="uid://d1ekie6hbuund" path="res://Scenes/FrontRight.tres" id="2_6t5aa"]
+[ext_resource type="SpriteFrames" uid="uid://dhkjgnpkvym67" path="res://Scenes/FrontLeft.tres" id="3_6t5aa"]
+
+[node name="Player" type="CharacterBody2D" unique_id=634448091]
+script = ExtResource("1_vgqql")
+
+[node name="Front" type="AnimatedSprite2D" parent="." unique_id=1807104582]
+visible = false
+sprite_frames = ExtResource("1_cvnsp")
+animation = &"Walk"
+frame_progress = 0.45987174
+
+[node name="FrontRight" type="AnimatedSprite2D" parent="." unique_id=536746326]
+visible = false
+sprite_frames = ExtResource("2_6t5aa")
+animation = &"Run"
+frame_progress = 0.5687056
+
+[node name="FrontLeft" type="AnimatedSprite2D" parent="." unique_id=1584254128]
+sprite_frames = ExtResource("3_6t5aa")
+animation = &"Run"
+frame_progress = 0.32904017
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1865319204]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2105978024]
+polygon = PackedVector2Array(-5, -28, -8, -28, -11, -26, -10, -19, -14, -17, -15, -11, -20, -9, -21, -15, -25, -13, -22, -6, -12, -9, -9, -1, -12, 20, -4, 20, 8, 18, 5, 0, 4, -17)
